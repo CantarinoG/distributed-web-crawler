@@ -8,7 +8,7 @@ class QuotesSpider(RedisSpider):
     # Number of url to fetch from redis on each attempt
     redis_batch_size = 1
     # Max idle time(in seconds) before the spider stops checking redis and shuts down
-    max_idle_time = 7
+    max_idle_time = 60
             
     def parse(self, response):
         for quote in response.css('div.quote'):

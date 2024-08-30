@@ -1,3 +1,4 @@
+from api_secrets import redis_url
 # Scrapy settings for quotes_js_scraper project
 #
 # For simplicity, this file contains only settings considered important or
@@ -25,7 +26,7 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 5
+DOWNLOAD_DELAY = 1
 
 
 # The download delay setting will honor only one of:
@@ -97,4 +98,4 @@ SCHEDULER = "scrapy_redis.scheduler.Scheduler"
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 
 # Redis Connection URL
-REDIS_URL = 'redis://<username>:<password>@<redis-connection-url>:<redis-port-number>'
+REDIS_URL = redis_url

@@ -2,6 +2,12 @@
 In this repo we have the code that we use in our Youtube video.
 Feel free to clone it and play around with it
 
+# Adding the redis URL
+1. On the root folder, create a file named `api_secrets.py`
+2. Inside this file, create a variable called 'redis_url' with you URL.    
+Example api_secrets.py:    
+`redis_url = 'redis://{user}:{password}@{address}:{port}'`
+
 # Getting Started - Cheat Sheet
 Useful commands below:
 1. Clone this project: `git clone https://github.com/python-scrapy-playbook/scaling-python-scrapy-redis.git`

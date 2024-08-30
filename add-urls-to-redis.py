@@ -1,8 +1,9 @@
 import redis
 from redis import from_url
+from api_secrets import redis_url
 
 # Create a redis client
-redisClient = redis.from_url('redis://<username>:<password>@<redis-connection-url>:<redis-port-number>')
+redisClient = redis.from_url(redis_url)
 
 # Push URLs to Redis Queue
 redisClient.lpush('quotes_queue:start_urls', "https://quotes.toscrape.com/page/1/")
