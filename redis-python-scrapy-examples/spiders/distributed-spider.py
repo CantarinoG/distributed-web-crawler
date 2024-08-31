@@ -1,6 +1,6 @@
 from urllib.parse import urlparse, urlunparse
 from scrapy_redis.spiders import RedisSpider
-from user_settings import redis_client, queue_name, set_name, time_to_shutdown, batch_size
+from user_settings import redis_client, queue_name, set_name, time_to_shutdown, batch_size, result_set_name
 
 class DistributedSpider(RedisSpider):
     name = "distributed_spider"
@@ -15,6 +15,8 @@ class DistributedSpider(RedisSpider):
         description = response.css('span.Formatted::text').get()
 
         if(title and rating and description):
+            json_string = '{"title": "' + title + '", "rating": "' + rating + '", "description": "' + description + '", "url": "' + response.url + '"},'
+            redis_client.sadd(result_set_name, json_string)
             yield {
                 'title': title,
                 'rating': rating,
