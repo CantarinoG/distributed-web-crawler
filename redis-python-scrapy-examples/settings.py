@@ -1,4 +1,5 @@
 from api_secrets import redis_url
+from user_settings import delay
 # Scrapy settings for quotes_js_scraper project
 #
 # For simplicity, this file contains only settings considered important or
@@ -18,7 +19,7 @@ NEWSPIDER_MODULE = 'redis-python-scrapy-examples.spiders'
 #USER_AGENT = 'quotes_js_scraper (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 1
@@ -26,7 +27,7 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 1
+DOWNLOAD_DELAY = delay
 
 
 # The download delay setting will honor only one of:
