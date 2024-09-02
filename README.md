@@ -19,7 +19,7 @@ Para cada visita de página, os crawler salvam as informações do livro(nome, n
 * Criar um ambiente virtual no projeto com `python3 -m venv venv`
 * Ativar o ambiente virtual no projet com `source venv/bin/activate`
 * Instalar as dependências(scrapy e scrapy-redis) com `pip install scrapy scrapy-redis`
-* Criar no diretório root do projeto um arquivo chamado de `api_secrets.py`, que deve conter uma variável chamada `redis_url` com a string da URL de conexão ao Redis (pode ser uma instância local ou em cloud, que pode ser adquirida gratuitamente no site oficial do Redis).
+* Criar no diretório root do projeto um arquivo chamado de `db_secrets.py`, que deve conter uma variável chamada `redis_url` com a string da URL de conexão ao Redis (pode ser uma instância local ou em cloud, que pode ser adquirida gratuitamente no site oficial do Redis).
 
 # Utilização
 

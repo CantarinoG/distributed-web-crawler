@@ -1,5 +1,5 @@
 import redis
-from api_secrets import redis_url
+from db_secrets import redis_url
 
 #Constantes usadas em outros arquivos:
 redis_client = redis.from_url(redis_url)

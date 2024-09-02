@@ -1,4 +1,4 @@
-from api_secrets import redis_url
+from db_secrets import redis_url
 from user_settings import delay
 # Scrapy settings for quotes_js_scraper project
 #

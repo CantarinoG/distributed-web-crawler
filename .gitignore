@@ -1,4 +1,4 @@
-api_secrets.py
+db_secrets.py
 
 __pycache__/
 *.pyc
