@@ -71,4 +71,3 @@ Isso pode ser feito com coisas como:
 * Autenticação e configuração de Firewall para permitir que apenas IPs autorizados acessem o Redis.
 * Encriptação de dados, caso a aplicação seja adaptada para coletar algum tipo de dados sensíveis.
 * Manter o Redis e outros serviços utilizados sempre na versão mais atual.
-

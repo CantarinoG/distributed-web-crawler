@@ -1,4 +1,3 @@
-from urllib.parse import urlparse, urlunparse
 from scrapy_redis.spiders import RedisSpider
 from user_settings import redis_client, queue_name, set_name, time_to_shutdown, batch_size, result_set_name
 

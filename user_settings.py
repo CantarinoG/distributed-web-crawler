@@ -12,5 +12,5 @@ batch_size = 1
 time_to_shutdown = 60
 
 #Palavras-chaves para busca e nome do conjunto de resultados armazenados
-key_words = ["literature"]
-result_set_name = "books"
+key_words = ["tecnology", "computers", "math", "romance"]
+result_set_name = "all_books"
